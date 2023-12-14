@@ -160,7 +160,10 @@ namespace CodewarsLogger
             Console.Write("Enter your email: ");
             credentials.Add(Console.ReadLine());
             Console.Write("Enter your Codewars password: ");
+
+            Console.ForegroundColor = ConsoleColor.Black; // changes the foreground colour to the same colour as the background to avoid shouldering
             credentials.Add(Console.ReadLine());
+            Console.ForegroundColor= ConsoleColor.White;
 
             return credentials;
         }
